@@ -1,0 +1,137 @@
+html {
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    z-index: -1;
+    margin: 0;
+    background-image: linear-gradient(#84ECFF, #00687B);
+    height: 100%;
+}
+
+#canvas {
+  display: block;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+header {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(#0ADAFF, #84ECFF);
+  position: fixed;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Permanent Marker', cursive;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  background-color: #91FBFF;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+/**
+ * title
+ */
+ h1 {
+   font-family: 'Permanent Marker', cursive;
+   color: #292929;
+   font-size: 100px;
+   position: absolute;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+/**
+ * pictures
+ */
+
+.pictures {
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+.image {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 187px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #33C9E5;
+}
+.image:hover .overlay {
+  opacity: .7;
+  cursor: pointer;
+}
+.text {
+  color: black;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image img {
+    width: 300px;
+    max-height: 187px;
+}
+
+/**
+ * lightbox stuff
+*/
+.hidden {
+    display: none;
+}
+#lightbox-overlay {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.lightbox {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.lightbox img {
+    z-index: 2;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.lightbox .caption {
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

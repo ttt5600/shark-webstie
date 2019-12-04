@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/confetti.js"></script>
+	</head>
+  <body>
+		<header>
+			<button id="stopButton">Stop the party :(</button>
+    	<button id="startButton">DO YOU LOVE SHARKS</button>
+  	</header>
+		<h1>SHARKS</h1>
+    <div class="pictures">
+			<div class ="image">
+  			<img src="assets/images/shark1.png" alt="">
+				<div class="overlay" id="picture1">
+					<div class = "text">Shortfin Mako Shark</div>
+				</div>
+			</div>
+			<div class ="image">
+  			<img src="assets/images/shark2.png" alt="">
+				<div class="overlay" id="picture2">
+					<div class = "text">Blue Shark</div>
+				</div>
+			</div>
+			<div class ="image">
+  			<img src="assets/images/shark3.png" alt="">
+				<div class="overlay" id="picture3">
+					<div class = "text">Wobbegong</div>
+				</div>
+			</div>
+			<div class ="image">
+  			<img src="assets/images/shark4.png" alt="">
+				<div class="overlay" id="picture4">
+					<div class = "text">Scalloped Hammerhead</div>
+				</div>
+			</div>
+  	</div>
+
+		<div id="lightbox-overlay" class="hidden"></div>
+
+		<!-- lightbox pop-up elements that are hidden using a css class -->
+		<div class="lightbox hidden" id="hiddenshark1">
+			<img src="assets/images/shark6.png" alt="">
+			<div class="caption">
+				The shortfin mako shark can grow up to 12ft in length, and is capable of swimming 45mph. Phelps aint beating that. This shark is my favorite.
+			</div>
+		</div>
+		<div class="lightbox hidden" id="hiddenshark2">
+			<img src="assets/images/shark7.png" alt="">
+			<div class="caption">
+				The blue shark is known for long migrations, and grows to about 12ft in length. They look worried, but they're still my favorite.
+			</div>
+		</div>
+		<div class="lightbox hidden" id="hiddenshark3">
+			<img src="assets/images/shark8.png" alt="">
+			<div class="caption">
+				The wobbegong is a group of sharks, with the largest species being the spotted wobbegong at 10ft in length. They are ambush predators, and therefore my favorite.
+			</div>
+		</div>
+		<div class="lightbox hidden" id="hiddenshark4">
+			<img src="assets/images/shark9.png" alt="">
+			<div class="caption">
+				The scalloped hammerhead grows up to 14ft in length, and uses its wide head to sense for prey under the sand. I like its head, so it's my favorite.
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/scripts/about.js"></script>
+		<canvas id="canvas"></canvas>
+  </body>
+</html>
